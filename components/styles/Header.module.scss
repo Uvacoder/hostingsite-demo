@@ -1,0 +1,96 @@
+.navigation {
+  position: fixed;
+  height: 10%;
+  width: 100%;
+  display: flex;
+  gap: 5%;
+  align-items: center;
+  justify-content: center;
+  font-weight: 500;
+  z-index: 1000;
+}
+
+.navBurger {
+  display: none;
+}
+.header {
+  background-color: #141517;
+  min-height: 100vh;
+  min-width: 100vw;
+  max-height: 100vh;
+  max-width: 100vh;
+  justify-content: center;
+  display: flex;
+  position: relative;
+  font-family: "Roboto", sans-serif;
+  background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);
+  overflow: hidden;
+}
+
+.container {
+  display: flex;
+  justify-content: flex-end;
+  height: fit-content;
+  align-self: center;
+  margin-right: 3%;
+}
+
+.titleContainers {
+  display: flex;
+  flex-direction: column;
+  width: 35%;
+  justify-content: center;
+}
+
+@media screen and (max-width: 600px) {
+  .container {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    width: 100%;
+    margin-right: 0%;
+    margin-top: 10%;
+  }
+
+  .header {
+    background-color: #141517;
+    min-height: 100vh;
+    min-width: 100vw;
+    max-height: 100vh;
+    max-width: 100vh;
+    justify-content: flex-start;
+    display: flex;
+    position: relative;
+    font-family: "Roboto", sans-serif;
+    background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);
+    overflow: hidden;
+    flex-direction: column;
+  }
+
+  .titleContainers {
+    width: 80%;
+
+    margin: 5%;
+  }
+  .navText {
+    display: none;
+  }
+
+  .navBurger {
+    display: block;
+    position: absolute;
+    top: 3.25%;
+    left: 8%;
+    z-index: 99999;
+  }
+}
+
+.logoRocket {
+  font-size: 2rem;
+  color: #ff877f;
+  cursor: pointer;
+}
+
+.navText:hover {
+  cursor: pointer;
+}
