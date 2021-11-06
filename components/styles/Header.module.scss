@@ -8,6 +8,7 @@
   justify-content: center;
   font-weight: 500;
   z-index: 1000;
+  margin-left: 2%;
 }
 
 .navBurger {
@@ -81,7 +82,8 @@
     // position: absolute;
     z-index: 99999;
     position: fixed;
-    right: 80%;
+    right: 85%;
+    // top: 5%;
   }
 }
 

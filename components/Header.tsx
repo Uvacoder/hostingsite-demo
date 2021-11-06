@@ -43,7 +43,7 @@ const Header = () => {
                 fontSize: "2rem",
               }}
             >
-              Have your website
+              Let your website
               <span style={{ color: "#FF877F", marginLeft: "5px" }}>
                 Take Off
               </span>
@@ -63,7 +63,8 @@ const Header = () => {
             <span
               style={{
                 color: "white",
-                marginBottom: "3%",
+                marginBottom: "5%",
+                marginTop: "3%",
                 fontSize: "1.25rem",
               }}
             >
