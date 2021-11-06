@@ -13,7 +13,6 @@ const Header = () => {
   const viewportSize = useViewportSize();
   console.log(viewportSize);
   const [lottieWidth, setLottiewidth] = useState("45%");
-  const [burgerOpened, setBurgerOpened] = useState(false);
 
   useEffect(() => {
     if (viewportSize.width <= 600) {
@@ -84,15 +83,6 @@ const Header = () => {
           ></lottie-player>
         </motion.div>
       </div>
-      <Burger
-        opened={burgerOpened}
-        size="md"
-        color="white"
-        className={HeaderStyles.navBurger}
-        onClick={() => {
-          setBurgerOpened(!burgerOpened);
-        }}
-      ></Burger>
     </div>
   );
 };

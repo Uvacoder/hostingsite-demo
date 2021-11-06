@@ -78,11 +78,10 @@
 
   .navBurger {
     display: block;
-    position: absolute;
-    top: 3.2%;
-    left: 10%;
+    // position: absolute;
     z-index: 99999;
     position: fixed;
+    right: 80%;
   }
 }
 
