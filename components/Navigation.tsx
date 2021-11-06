@@ -4,12 +4,37 @@ import { faRocket } from "@fortawesome/free-solid-svg-icons";
 import styles from "./styles/Header.module.scss";
 import { useRouter } from "next/dist/client/router";
 import Link from "next/link";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 const Navigation = () => {
   const router = useRouter();
   const [burgerOpened, setBurgerOpened] = useState(false);
+  const [scrollPosition, setScrollPosition] = useState(0);
+  const [backgroundColor, setBackgroundColor] = useState("none");
+  const handleScroll = () => {
+    const position = window.pageYOffset;
+    setScrollPosition(position);
+    if (position >= 100) {
+      setBackgroundColor("rgba(20, 21, 23, 0.9)");
+    } else if (position < 100) {
+      setBackgroundColor("rgba(0,0,0,0)");
+    }
+  };
+  useEffect(() => {
+    window.addEventListener("scroll", handleScroll, { passive: true });
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
+  console.log(scrollPosition);
   return (
-    <nav className={styles.navigation}>
+    <nav
+      className={styles.navigation}
+      style={{
+        backgroundColor: backgroundColor,
+      }}
+    >
       <div
         style={{
           display: "flex",
@@ -30,6 +55,7 @@ const Navigation = () => {
         ></Burger>
         <Text
           style={{ fontSize: " 1.5rem", color: "white", cursor: "pointer" }}
+          className={styles.logoTitle}
         >
           RocketBase
         </Text>

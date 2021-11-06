@@ -8,14 +8,13 @@
   justify-content: center;
   font-weight: 500;
   z-index: 1000;
-  margin-left: 2%;
 }
 
 .navBurger {
   display: none;
 }
 .header {
-  background-color: #141517;
+  background-color: #14151765;
   min-height: 100vh;
   min-width: 100vw;
   max-height: 100vh;
@@ -41,6 +40,12 @@
   flex-direction: column;
   width: 35%;
   justify-content: center;
+}
+
+.logoRocket {
+  font-size: 2rem;
+  color: #ff877f;
+  cursor: pointer;
 }
 
 @media screen and (max-width: 600px) {
@@ -85,12 +90,11 @@
     right: 85%;
     // top: 5%;
   }
-}
-
-.logoRocket {
-  font-size: 2rem;
-  color: #ff877f;
-  cursor: pointer;
+  .logoRocket {
+    font-size: 3rem;
+    color: #ff877f;
+    cursor: pointer;
+  }
 }
 
 .navText:hover {
