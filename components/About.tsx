@@ -21,11 +21,6 @@ const About = () => {
             dignissim lacus, a volutpat neque rutrum a. Nullam eu ullamcorper
             metus. Aenean blandit urna in lorem vulputate pharetra. Ut eget
             varius leo, a mattis nisl. Cras vitae enim cursus, aliquam urna in,
-            semper enim. In leo ante, egestas quis diam ut, scelerisque iaculis
-            augue. In egestas augue ut libero vestibulum hendrerit. Aenean
-            imperdiet vitae est feugiat blandit. Fusce ullamcorper velit id
-            dictum maximus. Sed nibh est, pretium a tincidunt ut, hendrerit at
-            dolor.
           </Text>
         </div>
       </div>
@@ -39,11 +34,6 @@ const About = () => {
             dignissim lacus, a volutpat neque rutrum a. Nullam eu ullamcorper
             metus. Aenean blandit urna in lorem vulputate pharetra. Ut eget
             varius leo, a mattis nisl. Cras vitae enim cursus, aliquam urna in,
-            semper enim. In leo ante, egestas quis diam ut, scelerisque iaculis
-            augue. In egestas augue ut libero vestibulum hendrerit. Aenean
-            imperdiet vitae est feugiat blandit. Fusce ullamcorper velit id
-            dictum maximus. Sed nibh est, pretium a tincidunt ut, hendrerit at
-            dolor.
           </Text>
         </div>
         <div style={{ width: "50%" }}>
@@ -73,13 +63,7 @@ const About = () => {
           <Text className={styles.paragraphs}>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. In aliquet
             dignissim lacus, a volutpat neque rutrum a. Nullam eu ullamcorper
-            metus. Aenean blandit urna in lorem vulputate pharetra. Ut eget
-            varius leo, a mattis nisl. Cras vitae enim cursus, aliquam urna in,
-            semper enim. In leo ante, egestas quis diam ut, scelerisque iaculis
-            augue. In egestas augue ut libero vestibulum hendrerit. Aenean
-            imperdiet vitae est feugiat blandit. Fusce ullamcorper velit id
-            dictum maximus. Sed nibh est, pretium a tincidunt ut, hendrerit at
-            dolor.
+            metus.
           </Text>
         </div>
       </div>

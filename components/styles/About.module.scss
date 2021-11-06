@@ -46,6 +46,9 @@
   flex-direction: column;
 }
 @media screen and (max-width: 600px) {
+  .background {
+    padding: 5%;
+  }
   .section1 {
     display: flex;
     width: 100%;
