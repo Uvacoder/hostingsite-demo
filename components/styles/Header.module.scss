@@ -7,7 +7,7 @@
   align-items: center;
   justify-content: center;
   font-weight: 500;
-  z-index: 1000;
+  z-index: 110;
   padding-left: 5%;
 }
 
@@ -47,6 +47,7 @@
   font-size: 2rem;
   color: #ff877f;
   cursor: pointer;
+  z-index: 100;
 }
 
 @media screen and (max-width: 600px) {
@@ -85,14 +86,13 @@
 
   .navBurger {
     display: block;
-    // position: absolute;
-    z-index: 99999;
     position: fixed;
     right: 85%;
     // top: 5%;
+    z-index: 110;
   }
   .logoRocket {
-    font-size: 3rem;
+    font-size: 2rem;
     color: #ff877f;
     cursor: pointer;
   }

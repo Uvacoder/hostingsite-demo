@@ -1,4 +1,4 @@
-import { Burger, Button, Text } from "@mantine/core";
+import { Burger, Button, Drawer, Text } from "@mantine/core";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faRocket } from "@fortawesome/free-solid-svg-icons";
 import styles from "./styles/Header.module.scss";
@@ -13,10 +13,10 @@ const Navigation = () => {
   const handleScroll = () => {
     const position = window.pageYOffset;
     setScrollPosition(position);
-    if (position >= 100) {
-      setBackgroundColor("rgba(20, 21, 23, 0.9)");
-    } else if (position < 100) {
+    if (position < 100 || burgerOpened) {
       setBackgroundColor("rgba(0,0,0,0)");
+    } else if (position >= 100) {
+      setBackgroundColor("rgba(20, 21, 23, 0.9)");
     }
   };
   useEffect(() => {
@@ -27,7 +27,6 @@ const Navigation = () => {
     };
   }, []);
 
-  console.log(scrollPosition);
   return (
     <nav
       className={styles.navigation}
@@ -35,6 +34,15 @@ const Navigation = () => {
         backgroundColor: backgroundColor,
       }}
     >
+      <Drawer
+        opened={burgerOpened}
+        onClose={() => setBurgerOpened(false)}
+        position="left"
+        size="sm"
+        styles={{ drawer: { backgroundColor: "#101214" } }}
+        hideCloseButton
+        zIndex={102}
+      ></Drawer>
       <div
         style={{
           display: "flex",
@@ -54,7 +62,12 @@ const Navigation = () => {
           }}
         ></Burger>
         <Text
-          style={{ fontSize: " 1.5rem", color: "white", cursor: "pointer" }}
+          style={{
+            fontSize: " 1.5rem",
+            color: "white",
+            cursor: "pointer",
+            display: burgerOpened ? "none" : "initial",
+          }}
           className={styles.logoTitle}
         >
           RocketBase
@@ -65,6 +78,7 @@ const Navigation = () => {
             router.push("/");
           }}
           className={styles.logoRocket}
+          style={{ display: burgerOpened ? "none" : "initial" }}
         />
       </div>
       <Link href="/">
