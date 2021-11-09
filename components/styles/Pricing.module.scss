@@ -1,6 +1,6 @@
 .pricePage {
   background-color: #101214;
-  height: 150vh;
+  height: 120vh;
   width: 100vw;
   display: flex;
   flex-direction: column;
@@ -11,7 +11,8 @@
 
 .priceBoxes {
   display: flex;
-  //   margin-top: 5%;
+  margin-top: 2%;
+  height: 100%;
   gap: 2%;
 }
 

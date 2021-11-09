@@ -129,7 +129,7 @@ const Pricing = () => {
           </Button>
         </div>
         {/* Card3 */}
-        <div className={`${styles.card}`} style={{ marginBottom: "50px" }}>
+        <div className={`${styles.card}`}>
           <Title order={3} style={{ fontWeight: 400, color: "#ff877f" }}>
             Enterprise
           </Title>

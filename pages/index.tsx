@@ -20,9 +20,9 @@ const Home: NextPage = () => {
       <main>
         <Navigation />
         <Header />
-        <Pricing />
         <About></About>
-        {/* <DomainSearch /> */}
+        <Pricing />
+        <DomainSearch />
       </main>
 
       {/* <footer></footer> */}
