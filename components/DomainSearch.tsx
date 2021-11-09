@@ -15,22 +15,16 @@ const DomainSearch = () => {
     >
       <Text
         style={{
-          fontSize: !phoneSize ? "2rem" : "1.5rem",
           fontWeight: 700,
           color: "#2C2E33",
           textAlign: "center",
         }}
+        className={styles.domainTitle}
       >
         Search For A Domain
       </Text>
-      <Input
-        styles={{
-          root: { width: phoneSize ? "100%" : "50%" },
-        }}
-        size="md"
-        radius="xl"
-      ></Input>
-      <Button size="md" radius="xl" fullWidth={!phoneSize ? false : true}>
+      <Input size="md" radius="xl" className={styles.input}></Input>
+      <Button className={styles.theButton} size="md" radius="xl">
         Search
       </Button>
     </div>

@@ -13,6 +13,7 @@ const Pricing = () => {
   // const [card3ref, inView] = useInView();
   return (
     <div className={styles.pricePage}>
+      <Divider />
       <div className={styles.titleDiv}>
         <Text
           style={{

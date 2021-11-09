@@ -9,8 +9,23 @@
   gap: 5%;
 }
 
+.domainTitle {
+  font-size: 2rem;
+}
+
 @media screen and (max-width: 600px) {
   .searchContainers {
     flex-direction: column;
+    justify-items: flex-start;
+  }
+  .domainTitle {
+    font-size: 1.5rem;
+  }
+
+  .theButton {
+    width: 100%;
+  }
+  .input {
+    width: 100%;
   }
 }
