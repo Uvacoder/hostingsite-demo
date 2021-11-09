@@ -5,8 +5,11 @@ import styles from "./styles/Header.module.scss";
 import { useRouter } from "next/dist/client/router";
 import Link from "next/link";
 import React, { useEffect, useState } from "react";
+import { useViewportSize, useWindowScroll } from "@mantine/hooks";
 const Navigation = () => {
   const router = useRouter();
+  const [scroll, scrollTo] = useWindowScroll();
+  const { height, width } = useViewportSize();
   const [burgerOpened, setBurgerOpened] = useState(false);
   const [scrollPosition, setScrollPosition] = useState(0);
   const [backgroundColor, setBackgroundColor] = useState("none");
@@ -39,10 +42,52 @@ const Navigation = () => {
         onClose={() => setBurgerOpened(false)}
         position="left"
         size="sm"
-        styles={{ drawer: { backgroundColor: "#101214" } }}
+        styles={{
+          drawer: {
+            backgroundColor: "#101214",
+            paddingTop: "30%",
+            display: "flex",
+            flexDirection: "column",
+            gap: "5%",
+          },
+        }}
         hideCloseButton
+        padding="xl"
         zIndex={102}
-      ></Drawer>
+      >
+        <Button
+          variant="outline"
+          fullWidth
+          size="xl"
+          className={styles.navButton}
+          onClick={() => {
+            scrollTo({ y: height });
+          }}
+        >
+          What we do
+        </Button>
+        <Button
+          variant="outline"
+          fullWidth
+          size="xl"
+          className={styles.navButton}
+          onClick={() => {
+            scrollTo({ y: height * 2.4 });
+          }}
+        >
+          Pricing
+        </Button>
+        <Button
+          variant="outline"
+          size="xl"
+          className={styles.navButton}
+          onClick={() => {
+            scrollTo({ y: height * 4 });
+          }}
+        >
+          Domain search
+        </Button>
+      </Drawer>
       <div
         style={{
           display: "flex",
