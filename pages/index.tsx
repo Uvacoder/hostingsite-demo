@@ -5,6 +5,7 @@ import About from "../components/About";
 import DomainSearch from "../components/DomainSearch";
 import Header from "../components/Header";
 import Navigation from "../components/Navigation";
+import Pricing from "../components/Pricing";
 import styles from "../styles/Home.module.css";
 
 const Home: NextPage = () => {
@@ -20,6 +21,7 @@ const Home: NextPage = () => {
         <Navigation />
         <Header />
         <About></About>
+        <Pricing />
         <DomainSearch />
       </main>
 

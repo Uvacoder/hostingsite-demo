@@ -58,7 +58,7 @@ const About = () => {
         </div>
         <div className={styles.sectionContainers}>
           <Text className={styles.paragraphTitles}>
-            Create responsive and modern wbsites
+            Create responsive and modern websites
           </Text>
           <Text className={styles.paragraphs}>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. In aliquet

@@ -1,5 +1,5 @@
 import { Button, Text, Input } from "@mantine/core";
-import { useMediaQuery } from "@mantine/hooks";
+import { useForceUpdate, useMediaQuery } from "@mantine/hooks";
 import { useEffect, useState } from "react";
 import styles from "./styles/DomainSearch.module.scss";
 const DomainSearch = () => {
@@ -15,11 +15,10 @@ const DomainSearch = () => {
     >
       <Text
         style={{
-          fontSize: phoneSize ? "1.2rem" : "2rem",
+          fontSize: !phoneSize ? "2rem" : "1.5rem",
           fontWeight: 700,
           color: "#2C2E33",
           textAlign: "center",
-          marginBottom: phoneSize ? "5%" : "0%",
         }}
       >
         Search For A Domain
@@ -31,7 +30,7 @@ const DomainSearch = () => {
         size="md"
         radius="xl"
       ></Input>
-      <Button size="md" radius="lg">
+      <Button size="md" radius="xl" fullWidth={!phoneSize ? false : true}>
         Search
       </Button>
     </div>

@@ -1,0 +1,78 @@
+.pricePage {
+  background-color: #101214;
+  height: 150vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  gap: 1%;
+  padding: 10%;
+}
+
+.priceBoxes {
+  display: flex;
+  margin-top: 5%;
+  gap: 2%;
+  height: 70%;
+}
+
+.card {
+  width: 30%;
+  //   color: aqua;
+  background: none;
+  border: #373a40 solid 2px;
+  border-radius: 20px;
+  padding: 2%;
+  overflow-y: visible;
+  display: flex;
+  flex-direction: column;
+  gap: 1%;
+}
+
+.badge {
+  bottom: 8%;
+}
+
+.aboutTitle {
+  font-size: 3em;
+}
+
+.aboutBio {
+  font-size: 1.5em;
+}
+
+@media screen and (max-width: 600px) {
+  .badge {
+    bottom: 14%;
+  }
+  .pricePage {
+    background-color: #101214;
+    height: 200vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    padding: 10%;
+  }
+  .titleDiv {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .priceBoxes {
+    flex-direction: column;
+    height: 100%;
+  }
+  .card {
+    width: 100%;
+    height: 80%;
+    border: #fff solid 1px;
+    padding: 10%;
+  }
+
+  .aboutTitle {
+    font-size: 2em;
+  }
+
+  .aboutBio {
+    font-size: 1em;
+  }
+}
