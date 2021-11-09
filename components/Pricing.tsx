@@ -40,7 +40,7 @@ const Pricing = () => {
       </div>
       <div className={styles.priceBoxes}>
         {/* Card1 */}
-        <motion.div className={`${styles.card}`}>
+        <div className={`${styles.card}`}>
           <Title order={3} style={{ fontWeight: 400, color: "#ff877f" }}>
             Hobby
           </Title>
@@ -74,7 +74,7 @@ const Pricing = () => {
           <Button style={{ backgroundColor: "#ff877f", marginTop: "auto" }}>
             Join Now
           </Button>
-        </motion.div>
+        </div>
         {/* Card2 */}
         <div
           className={`${styles.card}`}
@@ -129,7 +129,7 @@ const Pricing = () => {
           </Button>
         </div>
         {/* Card3 */}
-        <div className={`${styles.card}`}>
+        <div className={`${styles.card}`} style={{ marginBottom: "50px" }}>
           <Title order={3} style={{ fontWeight: 400, color: "#ff877f" }}>
             Enterprise
           </Title>
