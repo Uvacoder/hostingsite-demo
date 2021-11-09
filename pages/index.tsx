@@ -22,7 +22,7 @@ const Home: NextPage = () => {
         <Header />
         <About></About>
         <Pricing />
-        <DomainSearch />
+        {/* <DomainSearch /> */}
       </main>
 
       <footer></footer>
