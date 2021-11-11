@@ -61,7 +61,7 @@ const Navigation = () => {
           size="xl"
           className={styles.navButton}
           onClick={() => {
-            scrollTo({ y: height });
+            router.push("/about");
           }}
         >
           What we do
@@ -72,7 +72,7 @@ const Navigation = () => {
           size="xl"
           className={styles.navButton}
           onClick={() => {
-            scrollTo({ y: height * 2.4 });
+            router.push("/pricing");
           }}
         >
           Pricing
@@ -82,10 +82,10 @@ const Navigation = () => {
           size="xl"
           className={styles.navButton}
           onClick={() => {
-            scrollTo({ y: height * 4 });
+            router.push("/support");
           }}
         >
-          Domain search
+          Support
         </Button>
       </Drawer>
       <div
@@ -132,7 +132,12 @@ const Navigation = () => {
           Hosting Service
         </Text>
       </Link>
-      <Text className={styles.navText} variant="link" size="lg">
+      <Text
+        className={styles.navText}
+        variant="link"
+        size="lg"
+        onClick={() => router.push("/pricing")}
+      >
         Pricing
       </Text>
       <Text
