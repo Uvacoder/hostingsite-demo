@@ -3,6 +3,7 @@ import Head from "next/head";
 import Image from "next/image";
 import About from "../components/About";
 import DomainSearch from "../components/DomainSearch";
+import Footer from "../components/Footer";
 import Header from "../components/Header";
 import Navigation from "../components/Navigation";
 import Pricing from "../components/Pricing";
@@ -25,7 +26,7 @@ const Home: NextPage = () => {
         <DomainSearch />
       </main>
 
-      {/* <footer></footer> */}
+      <Footer />
     </div>
   );
 };

@@ -113,6 +113,7 @@ const Navigation = () => {
             cursor: "pointer",
             display: burgerOpened ? "none" : "initial",
           }}
+          onClick={() => router.push("/")}
           className={styles.logoTitle}
         >
           RocketBase
@@ -139,6 +140,7 @@ const Navigation = () => {
         variant="link"
         size="lg"
         style={{ marginRight: "10%" }}
+        onClick={() => router.push("/support")}
       >
         Support
       </Text>
