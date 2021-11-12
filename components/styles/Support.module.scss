@@ -33,13 +33,22 @@
   color: white;
 }
 
+.pageContainer {
+  display: flex;
+  gap: 250px;
+}
 @media screen and (max-width: 600px) {
   .supportPage {
-    // justify-content: flex-end;
-    flex-direction: column;
+    // align-items: center;
   }
   .iconContainers {
     transform: scale(0.5) translateY(15%);
     margin: 0%;
+  }
+
+  .pageContainer {
+    gap: 0px;
+    transform: scale(0.75);
+    flex-direction: column;
   }
 }

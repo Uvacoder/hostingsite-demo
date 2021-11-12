@@ -10,35 +10,42 @@ import {
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { Divider, Text } from "@mantine/core";
 import Footer from "../components/Footer";
+import { motion } from "framer-motion";
 const Support: NextPage = () => {
   return (
     <div>
       <Navigation />
       <div className={styles.supportPage}>
-        <div className={styles.iconContainers}>
-          <FontAwesomeIcon
-            icon={faComments}
-            className={styles.icons}
-            size="9x"
-          />
-          <Text className={styles.iconTitles}>Chat With Us</Text>
-          <Text className={styles.iconDesc}>Available everyday 7am-5pm</Text>
-        </div>
-        <div className={styles.iconContainers}>
-          <FontAwesomeIcon
-            icon={faEnvelopeOpenText}
-            className={styles.icons}
-            size="9x"
-          />
-          <Text className={styles.iconTitles}>Email Us</Text>
-          <Text className={styles.iconDesc}>
-            Responds within 1 business day
-          </Text>
-        </div>
-        <div className={styles.iconContainers}>
-          <FontAwesomeIcon icon={faPhone} className={styles.icons} size="9x" />
-          <Text className={styles.iconTitles}>Call Us</Text>
-          <Text className={styles.iconDesc}>+1-800-202-2929</Text>
+        <div className={styles.pageContainer}>
+          <motion.div className={styles.iconContainers}>
+            <FontAwesomeIcon
+              icon={faComments}
+              className={styles.icons}
+              size="9x"
+            />
+            <Text className={styles.iconTitles}>Chat With Us</Text>
+            <Text className={styles.iconDesc}>Available everyday 7am-5pm</Text>
+          </motion.div>
+          <div className={styles.iconContainers}>
+            <FontAwesomeIcon
+              icon={faEnvelopeOpenText}
+              className={styles.icons}
+              size="9x"
+            />
+            <Text className={styles.iconTitles}>Email Us</Text>
+            <Text className={styles.iconDesc}>
+              Responds within 1 business day
+            </Text>
+          </div>
+          <div className={styles.iconContainers}>
+            <FontAwesomeIcon
+              icon={faPhone}
+              className={styles.icons}
+              size="9x"
+            />
+            <Text className={styles.iconTitles}>Call Us</Text>
+            <Text className={styles.iconDesc}>+1-800-202-2929</Text>
+          </div>
         </div>
       </div>
       <Divider />
