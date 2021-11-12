@@ -39,14 +39,15 @@
 @media screen and (max-width: 600px) {
   .footer {
     flex-direction: column;
-    gap: 5%;
   }
   .footerContainerL {
     padding: 5%;
     width: 100%;
     max-height: 45%;
+    transform: scale(0.75);
   }
   .footerContainerR {
+    transform: scale(0.75);
     width: 100%;
     padding: 5%;
     max-height: 45%;
